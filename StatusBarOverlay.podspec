@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/IdleHandsApps/StatusBarOverlay.git", :tag => s.version.to_s }
 
   s.source_files = "Sources/*.swift"
-  s.dependency  'ReachabilitySwift', '~> 5.0.0'
+  s.dependency  'ReachabilitySwift'
   s.resource_bundles = { 'StatusBarOverlay' => ["Sources/*.xib", "Sources/*.xcassets"] }
 
   s.framework       = "UIKit"
